@@ -1,18 +1,18 @@
 {
-  "name": "chat-story",
+  "name": "chat-app",
   "version": "1.0.0",
-  "main": "index.js",
-"scripts": {
+  "main": "app.js",
+  "scripts": {
     "start": "node app.js"  // Comando que o Render usará para iniciar o app
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
     "cors": "^2.8.5",
-    "express": "^4.21.0",
-    "socket.io": "^4.8.0",
-    "sqlite3": "^5.1.7"
+    "socket.io": "^4.0.0"  // Dependência para chat em tempo real
+  },
+  "engines": {
+    "node": "20.x"  // Especifica a versão do Node
   }
 }
+
